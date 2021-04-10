@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Title from './Title';
 import Description from './Description';
+import BarGraph1 from './BarGraph1';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Title />
     <Description />
+    <BarGraph1 match="responses/list"/>
   </React.StrictMode>,
   document.getElementById('root')
 );

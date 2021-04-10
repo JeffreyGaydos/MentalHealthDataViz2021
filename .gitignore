@@ -1,0 +1,2 @@
+#ignoring python virtual environment and RestAPI
+django_backend/env

@@ -5,7 +5,6 @@ from responses.models import SurveyResponse
 class SurveyResponseSerializer(serializers.ModelSerializer):
     class Meta:
         model = SurveyResponse
-        # fields=['Label1', 'Label2']
         fields = ['born_year','gender','hispanic','race','highest_level_school','marital_status',
         'total_people_household','under_eighteen_people_household','covid_vaccine',
         'covid_vaccine_all_doses','vaccine_opinion','covid_concern1','covid_concern2',
@@ -47,3 +46,7 @@ class SurveyResponseSerializer(serializers.ModelSerializer):
         'class_plan_change_reason_financial_aid','class_plan_change_reason_campus_life','class_plan_change_reason_class_uncertainty',
         'class_plan_change_reason_expensive_covid','class_plan_change_reason_other','household_income']
 
+class SurveyResponseAgeDepressionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SurveyResponse
+        fields = ['born_year', 'depression']

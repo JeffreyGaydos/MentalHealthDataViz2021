@@ -7,7 +7,7 @@ django.setup()
 
 from responses.models import SurveyResponse
 
-data = open('HackFest21-SimplifiedData.csv')
+data = open('HackFest21-Data.csv')
 reader = csv.reader(data)
 
 labels = []

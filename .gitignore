@@ -1,2 +1,3 @@
 #ignoring python virtual environment and RestAPI
 django_backend/env
+django_backend/db.sqlite3

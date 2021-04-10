@@ -4,6 +4,8 @@ from responses import views
 
 urlpatterns = [
     path('list', views.SurveyResponseList.as_view()),
+    # path('query', views.SurveyResponseList.as_view()),
+    # re_path(r'^stores/(?P<store_id>\d+)/'),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

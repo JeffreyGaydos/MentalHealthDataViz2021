@@ -16,7 +16,7 @@ row1 = next(reader)
 for label in row1:
     labels.append(label)
 
-print(labels)
+# print(labels)
 
 SurveyResponse.objects.all().delete()
 for row in reader:
@@ -28,7 +28,7 @@ for row in reader:
             # print(response)
             parameterStr += f"{labels[i]}={int(response)},"
             i+=1
-        print(parameterStr)
+        # print(parameterStr)
         exec("new_response = SurveyResponse(%s)" % (parameterStr))
         new_response.save()
 

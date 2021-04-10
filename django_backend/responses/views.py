@@ -14,5 +14,5 @@ class SurveyResponseList(generics.ListAPIView):
     queryset = SurveyResponse.objects.all()
     serializer_class = SurveyResponseAgeDepressionSerializer
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['race', 'born_year', 'gender']
+    filterset_fields = ['race', 'gender', 'marital_status', 'vaccine_opinion']
     
